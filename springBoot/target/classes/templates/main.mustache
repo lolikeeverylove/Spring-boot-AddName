@@ -21,11 +21,16 @@
         <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
         <button type="submit">Найти по тегу</button>
     </form>
+
+<!--    из конструктора класса messege впринципе понятно откуда всё появляется и выводим в мейн контроллере-->
     {{#messages}}
     <div>
         <b>{{id}}</b>
         <span>{{text}}</span>
         <i>{{tag}}</i>
+<!--        потому что там гет автор нейм поэтому такое название-->
+        <strong>{{authorName}}</strong>
+
     </div>
     {{/messages}}
 </body>
